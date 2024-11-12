@@ -43,12 +43,15 @@ class Auto:
 
     def verificarIntegridad(self):
         if self.registro != self.motor.registro:
-            return "Las piezas no son originales"
+         return "Las piezas no son originales"
+     
         for asiento in self.asientos:
-            if asiento is not None and asiento.registro != self.registro:
-                return "Las piezas no son originales"
+         if asiento is not None and asiento.registro != self.registro:
+            return "Las piezas no son originales"
+    
         return "Auto original"
-
+    
+    
     @staticmethod
     def incrementarCantidadCreados():
         Auto.cantidadCreados += 1
