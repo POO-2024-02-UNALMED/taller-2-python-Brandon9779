@@ -30,7 +30,7 @@ class Auto:
         self.modelo = modelo
         self.precio = precio
         self.marca = marca
-        self.asientos = asientos if asientos is not None else []
+        self.asientos = asientos
         self.motor = motor
         self.registro = registro
 
